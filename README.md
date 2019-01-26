@@ -2,7 +2,7 @@
 
 The frontend for this project was built with [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/). Read below for editing instructions.
 
-# [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/)
+# Start Bootstrap - Grayscale
 
 [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 

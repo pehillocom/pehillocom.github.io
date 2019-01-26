@@ -12,4 +12,18 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #161616 !default;
 
-$primary: #64a19d !default;
+$primary: #35401B;
+$green: $primary;
+$blue: #5B85AA;
+$yellow: lighten(#e3d6ab, 18.5%);
+$orange: #B9BAAB;
+$brown: darken(#915C38, 10%);
+$red: $orange;
+
+$font-family-sans-serif: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-serif: 'Spectral', Garamond, Georgia, Times, 'Times New Roman', serif;
+$font-family-display: 'Dancing Script', 'Comic Sans', -apple-system, sans-serif;
+
+$font-size-base: 1.125rem;
+
+$headings-font-family: $font-family-serif;

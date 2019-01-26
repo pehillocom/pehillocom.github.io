@@ -1,4 +1,5 @@
 @import 'variables.scss';
+@import '../node_modules/bootstrap/scss/bootstrap';
 @import 'mixins.scss';
 @import 'navbar.scss';
 @import 'masthead.scss';
@@ -9,8 +10,8 @@
 @import 'contact.scss';
 
 body {
-  font-family: 'Nunito';
-  letter-spacing: 0.0625em;
+  font-family: $font-family-base;
+  letter-spacing: 0.075rem;
 }
 
 a {
@@ -29,6 +30,8 @@ a {
 .bg-primary {
   background-color: $primary !important;
 }
+
+
 
 .text-primary {
   color: $primary !important;

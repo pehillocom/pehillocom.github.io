@@ -1,19 +1,39 @@
 #mainNav {
   min-height: 56px;
-  background-color: $white;
+  background-color: $yellow;
+  padding-top: 34px;
+  a {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  a:hover {
+    cursor: pointer;
+    color: $primary;
+  }
+  .dropdown-menu {
+    border: 0;
+    border-radius: 0;
+    background: $yellow;
+    top: 4.3333rem;
+    .dropdown-item {
+      line-height: 2;
+    }
+  }
   .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
-    color: $primary;
-    border: 1px solid $primary;
+    color: $orange;
+    border: 1px solid $orange;
     &:focus {
       outline: none;
     }
   }
   .navbar-brand {
-    color: $black;
+    color: $orange;
     font-weight: 700;
     padding: .9rem 0;
+    font-size: 2rem;
+    font-family: $font-family-display;
   }
   .navbar-nav {
     .nav-item {
@@ -30,47 +50,86 @@
     }
   }
   @media (min-width: 992px) {
-    padding-top: 0;
+    padding-top: 24px;
     padding-bottom: 0;
     border-bottom: none;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
     .navbar-brand {
       padding: .5rem 0;
-      color: fade-out($white, .5);
+      color: transparent;
+      font-size: 2rem;
     }
     .nav-link {
-      transition: none;
       padding: 2rem 1.5rem;
-      color: fade-out($white, .5);
+      color: $white;
       &:hover {
-        color: fade-out($white, .25);
+        color: $white;
       }
       &:active {
-        color: white;
+        color: $white;
+      }
+    }
+    .nav-item:hover {
+      .dropdown-menu {
+        display: block;
       }
     }
     &.navbar-shrink {
-      background-color: $white;
+      background-color: $yellow;
       .navbar-brand {
-        color: $black;
+        color: $orange;
       }
       .nav-link {
         color: $black;
         padding: 1.5rem 1.5rem 1.25rem;
         border-bottom: 0.25rem solid transparent;
         &:hover {
-          color: $primary;
+          color: $orange;
         }
         &:active {
-          color: darken($primary, 15%);
+          color: $orange;
         }
         &.active {
-          color: $primary;
+          color: $orange;
           outline: none;
-          border-bottom: 0.25rem solid $primary;
+          border-bottom: 0.25rem solid $orange;
         }
       }
+    }
+  }
+}
+
+#langNav {
+  z-index: 1130;
+  height: 24px;
+  background: transparent;
+  margin-top: 10px;
+
+  .container {
+    padding: 0 1rem;
+  }
+  .langbar {
+    padding-right: 0;
+  }
+  a {
+    cursor: pointer;
+  }
+  a > img {
+    height: 20px;
+    width: auto;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    opacity: 0.5;
+  }
+  a:hover > img {
+    opacity: 1;
+  }
+  a.active > img {
+    opacity: 1;
+  }
+  @media (min-width: 992px) {
+    .langbar {
+       padding: 0 1.5rem;
     }
   }
 }
