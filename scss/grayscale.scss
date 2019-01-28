@@ -1,30 +1,24 @@
-@import 'variables.scss';
+@import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
-@import 'mixins.scss';
-@import 'navbar.scss';
-@import 'masthead.scss';
-@import 'buttons.scss';
-@import 'about.scss';
-@import 'projects.scss';
-@import 'signup.scss';
-@import 'contact.scss';
+@import 'mixins';
+@import 'navbar';
+@import 'masthead';
+@import 'buttons';
+@import 'about';
+@import 'projects';
+@import 'contact';
+@import 'map';
 
 body {
   font-family: $font-family-base;
   letter-spacing: 0.075rem;
 }
 
-a {
-  color: $primary;
-  &:focus,
-  &:hover {
-    text-decoration: none;
-    color: darken($primary, 20%);
-  }
-}
-
 .bg-black {
   background-color: $black !important;
+}
+.bg-brown {
+  background-color: $brown !important;
 }
 
 .bg-primary {

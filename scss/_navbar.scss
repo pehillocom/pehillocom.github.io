@@ -17,6 +17,17 @@
     top: 4.3333rem;
     .dropdown-item {
       line-height: 2;
+      border-radius: 0;
+      padding: .25rem 1.5rem .25rem 2rem;
+      color: $brown;
+      &:hover {
+        background: rgba($black, 0.05);
+      }
+    }
+  }
+  .nav-link {
+    i[class^=fa] {
+      display: none;
     }
   }
   .navbar-toggler {
@@ -68,6 +79,13 @@
       }
       &:active {
         color: $white;
+      }
+      i[class^=fa] {
+        display: inline-block;
+        opacity: 0.3;
+        font-size: 0.75rem;
+        vertical-align: middle;
+        margin-left: 0.5rem;
       }
     }
     .nav-item:hover {
@@ -127,7 +145,15 @@
   a.active > img {
     opacity: 1;
   }
+  @media (min-width: 576px) {
+    .container {
+      padding: 0;
+    }
+  }
   @media (min-width: 992px) {
+    .container {
+      padding: 0 1rem;
+    }
     .langbar {
        padding: 0 1.5rem;
     }
