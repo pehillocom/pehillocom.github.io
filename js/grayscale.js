@@ -35,4 +35,35 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+
+
+
 })(jQuery); // End of use strict
+
+
+
+// Super quick slideshow
+var slideIndex = [1, 1, 1];
+var slideId = ["slides-0", "slides-1", "slides-2"];
+slideShow(1, 0);
+slideShow(1, 1);
+slideShow(1, 2);
+
+
+// no: index of slideshow on page (e.g. if there are 3 slideshows, the first `no` is 0, 2nd is 1, etc)
+function slidesMoveIndex(n, no) {
+  slideShow(slideIndex[no] += n, no);
+}
+
+// n: 1 to move forward 1 slide, -1 to move backward a slide
+// no: index of slideshow on page (e.g. if there are 3 slideshows, the first `no` is 0, 2nd is 1, etc)
+function slideShow(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}

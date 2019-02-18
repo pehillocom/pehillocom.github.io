@@ -5,7 +5,6 @@
   min-height: 35rem;
   padding: 15rem 0;
   background: url('../img/bg-masthead.jpg');
-  // background:  url('../img/bg-masthead.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,7 +18,7 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: linear-gradient(to bottom, #{fade-out($primary, .9)} 0%,#{fade-out($primary, .5)} 75%,$primary 100%);
+    background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%);
   }
   h1 {
     font-family: $font-family-display;
