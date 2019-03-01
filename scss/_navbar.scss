@@ -70,6 +70,9 @@
       padding: .5rem 0;
       color: transparent;
       font-size: 2rem;
+      &:hover {
+        color: transparent;
+      }
     }
     .nav-link {
       padding: 2rem 1.5rem;
