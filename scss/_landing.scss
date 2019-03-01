@@ -1,10 +1,11 @@
 .about-section {
   padding-top: 14rem;
+  padding-bottom: 8rem;
   p {
-    margin-bottom: 2rem;
-  }
-  .btn {
-    margin-bottom: 8rem;
+    margin-bottom: 0;
+    + .btn {
+      margin-top: 2rem;
+    }
   }
 }
 

@@ -10846,14 +10846,15 @@ body {
 
 body.landing .about-section {
   padding-top: 14rem;
+  padding-bottom: 8rem;
 }
 
 body.landing .about-section p {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
-body.landing .about-section .btn {
-  margin-bottom: 8rem;
+body.landing .about-section p + .btn {
+  margin-top: 2rem;
 }
 
 body.landing #mainNav .navbar-brand {
