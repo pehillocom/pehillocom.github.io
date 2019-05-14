@@ -10561,10 +10561,10 @@ a.text-dark:hover, a.text-dark:focus {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: url("../img/bg-masthead.jpg");
+  background-color: #6c452a;
+  background-image: url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   z-index: 0;
 }
