@@ -5,10 +5,17 @@
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
+      console.log(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
+        if (this.hash == '#location') {
+            var topoffset = 130;
+        } else {
+            var topoffset = 70;
+        }
+        console.log(topoffset);
         $('html, body').animate({
-          scrollTop: (target.offset().top - 70)
+          scrollTop: (target.offset().top - topoffset)
         }, 1000, "easeInOutExpo");
         return false;
       }

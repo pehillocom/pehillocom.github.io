@@ -10803,7 +10803,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .contact-form-section {
-  padding: 10rem 0;
+  padding: 8rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 22, 13, 0.6)), color-stop(75%, rgba(35, 22, 13, 0.8)), to(#23160d)), url("../img/bg-signup.jpg");
   background: linear-gradient(to bottom, rgba(35, 22, 13, 0.6) 0%, rgba(35, 22, 13, 0.8) 75%, #23160d 100%), url("../img/bg-signup.jpg");
   background-position: center;
