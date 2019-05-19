@@ -10561,12 +10561,24 @@ a.text-dark:hover, a.text-dark:focus {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
+  z-index: 0;
   background-color: #6c452a;
-  background-image: url("../img/bg-masthead.jpg");
+  background-image: url("../img/bg-masthead-1024.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 0;
+}
+
+@media (min-width: 1025px) {
+  .masthead {
+    background-image: url("../img/bg-masthead-1920.jpg");
+  }
+}
+
+@media (min-width: 1921px) {
+  .masthead {
+    background-image: url("../img/bg-masthead.jpg");
+  }
 }
 
 .masthead:after {
@@ -10875,6 +10887,10 @@ body.landing #mainNav.navbar-shrink .navbar-brand {
 
 .bg-primary {
   background-color: #4E6727 !important;
+}
+
+h3 {
+  font-size: 22.5px;
 }
 
 .text-primary {

@@ -4,12 +4,18 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
+  z-index: 0;
   background-color: $brown;
-  background-image: url('../img/bg-masthead.jpg');
+  background-image: url('../img/bg-masthead-1024.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 0;
+  @media (min-width: 1025px) {
+    background-image: url('../img/bg-masthead-1920.jpg');
+  }
+  @media (min-width: 1921px) {
+    background-image: url('../img/bg-masthead.jpg');
+  }
   &:after {
     content: '';
     position: absolute;
