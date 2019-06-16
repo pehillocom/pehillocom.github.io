@@ -237,10 +237,11 @@
                 <textarea type="text" class="form-control" name="message" rows="7" data-form-field="Message" id="message-form1-2w"></textarea>
               </div>
               <div class="input-group-btn text-center">
-                  <div class="g-recaptcha" data-sitekey="6LcCsKgUAAAAAFtzCNckC7yAuM-JWlMGzOBgGhVr" style="display:inline-block"></div>
+                  <div class="g-recaptcha" data-sitekey="6LcCsKgUAAAAAFtzCNckC7yAuM-JWlMGzOBgGhVr"
+                       data-callback="enableSubmitBtn" style="display:inline-block"></div>
               </div>
               <div class="input-group-btn text-center">
-                <button type="submit" class="btn btn-primary btn-form mt-4">Book Now</button>
+                <button type="submit" id="submitForm" class="btn btn-primary btn-form mt-4" disabled>Book Now</button>
               </div>
             </form>
 

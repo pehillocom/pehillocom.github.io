@@ -70,3 +70,15 @@ function slideShow(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";
 }
+
+function enableSubmitBtn() {
+    $('#submitForm').removeAttr('disabled');
+}
+
+window.onload = function() {
+    var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+    if($recaptcha) {
+        $recaptcha.setAttribute("required", "required");
+    }
+};
