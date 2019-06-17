@@ -46,11 +46,14 @@
 
 
 // Super quick slideshow
-var slideIndex = [1, 1, 1];
-var slideId = ["slides-0", "slides-1", "slides-2"];
+var slideIndex = [1, 1, 1, 1, 1, 1];
+var slideId = ["slides-0", "slides-1", "slides-2", "slides-3", "slides-4", "slides-5"];
 slideShow(1, 0);
 slideShow(1, 1);
 slideShow(1, 2);
+slideShow(1, 3);
+slideShow(1, 4);
+slideShow(1, 5);
 
 
 // no: index of slideshow on page (e.g. if there are 3 slideshows, the first `no` is 0, 2nd is 1, etc)
