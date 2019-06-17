@@ -8,8 +8,8 @@
       console.log(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
-        if (this.hash == '#location') {
-            var topoffset = 130;
+        if (this.hash == '#location' || this.hash == '#learnmore') {
+            var topoffset = 150;
         } else {
             var topoffset = 70;
         }
