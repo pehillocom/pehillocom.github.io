@@ -42,6 +42,10 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  if ( $('.photorow a').length ) {
+      var gallery = $('.photorow a').simpleLightbox();
+  }
+
 })(jQuery); // End of use strict
 
 
@@ -71,7 +75,9 @@ function slideShow(n, no) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  x[slideIndex[no]-1].style.display = "block";
+  if (x[slideIndex[no]-1]) {
+      x[slideIndex[no]-1].style.display = "block";
+  }
 }
 
 function enableSubmitBtn() {
