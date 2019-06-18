@@ -48,6 +48,7 @@
   }
   .navbar-nav {
     .nav-item {
+      position: relative;
       &:hover {
         color: fade(white, 80%);
         outline: none;
@@ -91,6 +92,15 @@
         margin-left: 0.5rem;
       }
     }
+    .nav-item.active:after {
+      position: absolute;
+      bottom: 20px;
+      left: 24px;
+      right: 24px;
+      width: calc(100% - 48px);
+      content: " ";
+      border-bottom: 2px solid #fff;
+    }
     .nav-item:hover {
       .dropdown-menu {
         display: block;
@@ -100,6 +110,9 @@
       background-color: $yellow;
       .navbar-brand {
         color: $orange;
+      }
+      .nav-item.active:after {
+        border-bottom: 2px solid #23160d;
       }
       .nav-link {
         color: $black;

@@ -10433,6 +10433,10 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Dancing Script", "Comic Sans", -apple-system, sans-serif;
 }
 
+#mainNav .navbar-nav .nav-item {
+  position: relative;
+}
+
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(white, 80%);
   outline: none;
@@ -10478,6 +10482,15 @@ a.text-dark:hover, a.text-dark:focus {
     vertical-align: middle;
     margin-left: 0.5rem;
   }
+  #mainNav .nav-item.active:after {
+    position: absolute;
+    bottom: 20px;
+    left: 24px;
+    right: 24px;
+    width: calc(100% - 48px);
+    content: " ";
+    border-bottom: 2px solid #fff;
+  }
   #mainNav .nav-item:hover .dropdown-menu {
     display: block;
   }
@@ -10486,6 +10499,9 @@ a.text-dark:hover, a.text-dark:focus {
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #BF4F18;
+  }
+  #mainNav.navbar-shrink .nav-item.active:after {
+    border-bottom: 2px solid #23160d;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #23160d;

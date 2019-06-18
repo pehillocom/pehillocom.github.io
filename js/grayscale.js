@@ -42,7 +42,7 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  if ( $('.photorow a').length ) {
+  if ( $('.photorow').length ) {
       var gallery = $('.photorow a').simpleLightbox();
   }
 
