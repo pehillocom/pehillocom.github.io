@@ -10421,8 +10421,8 @@ a.text-dark:hover, a.text-dark:focus {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #BF4F18;
-  border: 1px solid #BF4F18;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -10430,7 +10430,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #mainNav .navbar-brand {
-  color: #BF4F18;
+  color: #fff;
   font-weight: 700;
   padding: .9rem 0;
   font-size: 2rem;
@@ -10466,6 +10466,13 @@ a.text-dark:hover, a.text-dark:focus {
   }
   #mainNav .nav-link {
     padding: .25rem 1.5rem .25rem 2rem;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #BF4F18;
+  }
+  #mainNav.navbar-shrink .navbar-toggler {
+    color: #BF4F18;
+    border: 1px solid #BF4F18;
   }
 }
 
@@ -10520,6 +10527,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
   #mainNav.navbar-shrink .nav-item.active:after {
     border-bottom: 2px solid #23160d;
+  }
+  #mainNav.navbar-shrink .navbar-toggler {
+    color: #BF4F18;
+    border: 1px solid #BF4F18;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #23160d;
@@ -10828,6 +10839,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 1.5rem;
   line-height: 3rem;
   color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 15px;
 }
 
 .contact-section .social a:not(.tel):hover {
@@ -10845,6 +10857,7 @@ a.text-dark:hover, a.text-dark:focus {
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.3);
   padding: 0 2rem;
+  margin-bottom: 15px;
 }
 
 .contact-section .social a.tel:hover {

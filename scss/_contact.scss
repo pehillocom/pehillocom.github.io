@@ -25,6 +25,7 @@
       border-radius: 1.5rem;
       line-height: 3rem;
       color: fade-out($white, 0.7);
+      margin-bottom: 15px;
       &:hover {
         color: fade-out($white, 0.5);
       }
@@ -39,6 +40,7 @@
       background: fade-out($white, 0.9);
       color: fade-out($white, 0.7);
       padding: 0 2rem;
+      margin-bottom: 15px;
       &:hover {
         color: fade-out($white, 0.5);
         text-decoration: none
