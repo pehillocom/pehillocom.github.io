@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pehillocom.github.io/sitemap.xml
+Sitemap: https://pehillo.com/sitemap.xml
